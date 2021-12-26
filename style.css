@@ -1,0 +1,151 @@
+header {
+  display: flex;
+  background-color: green;
+  margin: 20px;
+  color: white;
+  justify-content: space-between;
+  list-style-type: none;
+  text-align: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.variete {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px;
+  color: black;
+  background-color: rgba(0, 128, 0, 0.466);
+}
+.presentation p {
+  margin: 50px;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(27, 177, 27, 0.062);
+}
+.presentation h2 {
+  margin: 50px;
+  display: block;
+  text-align: center;
+  color: green;
+}
+
+.presentation {
+  margin: 50px;
+  display: block;
+}
+
+.choice {
+  margin: 30px;
+
+  text-align: center;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(8, 151, 63);
+}
+.garantie h2 {
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.garantie {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: green;
+  font-size: 20px;
+}
+.garanti {
+  display: inline-block;
+  justify-content: space-between;
+  text-align: center;
+  justify-content: center;
+  margin: 50px;
+
+  color: white;
+}
+
+.contacts {
+  justify-content: center;
+  text-align: center;
+  color: black;
+
+  font-size: 20px;
+}
+.contact {
+  display: inline-block;
+  justify-content: space-between;
+  text-align: center;
+  justify-content: center;
+  margin: 50px;
+  color: black;
+  background-color: rgba(0, 128, 0, 0.041);
+}
+.tab {
+  margin: 50px;
+  margin-bottom: 300px;
+}
+
+/*--------------------Cart------------------*/
+.products-container {
+  max-width: 650 px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+.products-header {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+}
+
+.product-title {
+  width: 45%;
+}
+.price {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+.quantity {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.total {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+.product {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
