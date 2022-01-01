@@ -107,4 +107,35 @@ function totalCost(product) {
   }
 }
 
+function displayCart() {
+  let cartItems = localStorage.getItem("productsinCart");
+  cartItems = JSON.parse(cartItems);
+  let productContainer = document.querySelector(".products");
+  let cartCost = localStorage.getItem("totalCost");
+  if (cartItems && productContainer) {
+    productContainer.innerHTML = "";
+    Object.values(cartItems).map((item) => {
+      productContainer.innerHTML += `
+    <div class = "product">
+      <img src ="./images/${item.tag}.jpg">
+        <span>${item.name}</span>
+
+    </div>
+    <div class="price">${item.price}DT</div>
+    <div class ="quantity">${item.inCart}</div>
+    <div class ="total">${item.inCart * item.price},000DT</div>
+      `;
+    });
+    productContainer.innerHTML += `
+    <div class="basketTotalContainer">
+    <h4 class ="basketTotalTitle">
+    Basket Total
+    </h4>
+    <h4 class="basketTotal">
+    ${cartCost},000DT
+    </h4>
+    `;
+  }
+}
 onLoadCartNumbers();
+displayCart();
